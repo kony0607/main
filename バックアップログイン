@@ -1,0 +1,32 @@
+
+<link href="login.css" rel="stylesheet" />
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="uft-8">
+  <title>ログイン画面</title>
+</head>
+<div class="login-container">
+  <body>
+<!-- ログイン画面 -->
+<div id="login-screen" class="screen">
+    <h2>ログイン</h2 >
+    <form>
+       <div class="form-group">
+      <label for="username">ユーザー名</label><!-- パスワード再入力と可視化のため -->
+      <input type="text" id="username" name="username" required> 
+      </div>
+      <div class="form-group">
+      <label for="inputPassword">パスワード</label>
+      <input type="password" pattern="^[a-zA-Z0-9]+$" maxlength="4" id="passwordInput" name="password" required>
+      <label for="inputCheckbox"><input id="inputCheckbox" type="checkbox"> パスワードを表示する</label>      
+      </div>        
+      <button type="submit" onclick="showScreen('main-screen')" id="logindesu">ログイン</button>
+    </form>
+    <p><a href="sinki.html" >新規登録はこちら</a></p>
+  </div>
+
+<script src="login.js"></script>
+</body>
+</html>
+</div>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>explain</title> 
+  <link href="explain.css" rel="stylesheet" />
+</head>
+<body>
+  <label><input type="radio" name="mode_change" value="graduation"> 卒業要件</label><br>
+  <label><input type="radio" name="mode_change" value="labo"> 研究室配属要件</label>
+
+  <div id="output" style="margin-top: 20px; font-size: 20px;"></div>
+
+  <div id="graduation-table" class="table-wrapper hidden">
+    <table class="info-table">
+      <thead>
+        <tr><th>合計単位数</th><th></th></tr>
+        <tr><th>○単位足りません</th><th></th></tr>
+      </thead>
+      <tbody>
+        <tr><td>教養科目</td><td><span id="graduation-general-value"></span></td></tr>
+        <tr><td>専門・必修</td><td><span id="graduation-required-value"></span></td></tr>
+        <tr><td>専門・選択</td><td><span id="graduation-select-value"></span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="labo-table" class="table-wrapper hidden">
+    <table class="info-table">
+      <thead>
+        <tr><th>合計単位数</th><th></th></tr>
+        <tr><th>○単位足りません</th><th></th></tr>
+      </thead>
+      <tbody>
+        <tr><td>教養科目</td><td><span id="labo-general-value"></span></td></tr>
+        <tr><td>専門・必修</td><td><span id="labo-required-value"></span></td></tr>
+        <tr><td>専門・選択</td><td><span id="labo-select-value"></span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="result_system.js"></script>
+</body>
+</html>
+

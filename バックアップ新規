@@ -1,0 +1,39 @@
+   <link href="login.css" rel="stylesheet" />
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="uft-8">
+  <title>新規画面</title>
+</head>
+<div class="login-container">
+  <body>
+   <!-- 新規登録画面 -->
+  <h2>新規登録</h2>
+  <form>
+    <div class="form-group">
+      <label for="username">ユーザー名</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+      <div class="form-group">
+      <label for="inputPassword">パスワード</label>
+      <input type="password" pattern="^[a-zA-Z0-9]+$" maxlength="4" id="passwordInput" name="password" required>
+      <label for="inputCheckbox"><input id="inputCheckbox" type="checkbox"> パスワードを表示する</label>      
+      </div>        
+    <div class="form-group">
+      <label for="gakuseki">コース</label>
+      <select name="prefecture">
+        <option value="">選択してください</option>
+        <option value="知能メディア情報">知能メディア情報</option>
+        <option value="電気電子情報通信">電気電子情報通信</option>
+        <option value="機械知能航空">機械知能航空</option>
+        <option value="下記省略">下記省略</option>
+        </select>
+    </div>
+    </form>
+    <button type="submit">登録</button>
+  </form>
+   </div>
+
+<script src="login.js"></script>
+</body>
+</html>
